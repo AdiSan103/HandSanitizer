@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- font css -->
     <link rel="stylesheet" href="src/css/font.css">
+    <!-- animation.css -->
+    <link rel="stylesheet" href="src/css/animation.css">
     <!-- css -->
     <style>
         * {
@@ -71,52 +73,56 @@
     </div>
 
     <!-- banner -->
-    <div class="md:grid flex md:grid-cols-2 flex-col-reverse items-center justify-center gap-3 px-4 min-h-screen">
+    <div
+        class="banner md:grid flex md:grid-cols-2 flex-col-reverse items-center justify-center gap-3 px-4 min-h-screen">
         <!-- left -->
         <div class="flex flex-col items-center">
-            <h1 class="md:text-5xl text-3xl text-pink-700 font-bold">Hand Sanitizer</h1>
-            <h6 class="pb-12 text-center text-xl">Pilihan terbaik ketika tidak ada fasilitas cuci tangan.</h6>
+            <h1 class="md:text-5xl text-3xl text-pink-700 font-bold animate1 toUp">Hand Sanitizer</h1>
+            <h6 class="pb-12 text-center text-xl animate1 toUp">Pilihan terbaik ketika tidak ada fasilitas cuci tangan.
+            </h6>
             <div>
                 <a href="/index.html#next"
-                    class="bg-pink-600 text-white py-4 px-6 rounded-xl shadow-xl border-2 border-white transition hover:bg-white hover:text-pink-600 hover:border-pink-600 font-bold text-2xl">Pelajari
+                    class="bg-pink-600 text-white py-4 px-6 rounded-xl shadow-xl border-2 border-white transition hover:bg-white hover:text-pink-600 hover:border-pink-600 font-bold text-2xl animate1 toUp">Pelajari
                     Lebih Dalam</a>
             </div>
         </div>
         <!-- right -->
         <div>
-            <img src="src/img/1.png" alt="img" class="w-full max-w-xl">
+            <img src="src/img/1.png" alt="img" class="img w-full max-w-xl animate1 toLeft">
         </div>
     </div>
 
     <!-- content1 -->
-    <div class="grid lg:grid-cols-3 grid-cols-1 items-center  bg-pink-400 text-white px-4 py-20" id="next">
+    <div class="content1 grid lg:grid-cols-3 grid-cols-1 items-center  bg-pink-400 text-white px-4 py-20" id="next">
         <!-- left -->
-        <ul class="grid content-center lg:text-right text-center text-2xl">
-            <li>World Health Organization (WHO) atau badan kesehatan dunia merekomendasikan bahwa kadar alkohol
+        <ul class="left grid content-center lg:text-right text-center text-2xl">
+            <li class="animate1 toRight">World Health Organization (WHO) atau badan kesehatan dunia merekomendasikan
+                bahwa kadar alkohol
                 dalam sanitizer minimum 60% agar efektif membasmi virus dan bakteri.</li>
         </ul>
         <!-- center -->
         <div>
-            <img src="src/img/6 (1).png" alt="img" class="w-full max-w-md m-auto p-7">
+            <img src="src/img/6 (1).png" alt="img" class="img animate1 fade1 w-full max-w-md m-auto p-7">
         </div>
         <!-- right -->
-        <ul class="grid content-center text-2xl lg:text-left text-center">
-            <li>Hand Sanitizer, praktis dan mudah dibawa diaman dan kapan pun.</li>
+        <ul class="right grid content-center text-2xl lg:text-left text-center">
+            <li class="animate1 toLeft">Hand Sanitizer, praktis dan mudah dibawa diaman dan kapan pun.</li>
         </ul>
     </div>
 
     <!-- content2 -->
-    <div class="max-w-5xl flex m-auto flex-col">
+    <div class="content2 max-w-5xl flex m-auto flex-col">
         <!-- content2-title -->
         <div class="pt-16 pb-28 px-5" id="komposisi">
-            <h2 class="text-5xl text-pink-700 font-bold">KOMPOSISI</h2>
-            <p class="text-xl">HAND SANITIZER mengandung Alkohol</p>
-            <div class="bg-pink-100 h-0.5 mt-3"></div>
+            <h2 class="text-5xl text-pink-700 font-bold animate1 toUp">KOMPOSISI</h2>
+            <p class="text-xl animate1 toUp">HAND SANITIZER mengandung Alkohol</p>
+            <div class="border1 bg-pink-100 h-0.5 mt-3 animate1 toRigth"></div>
         </div>
 
         <div class="gap-44 flex my-10 flex-col">
             <!-- content2-part -->
-            <div class="lg:grid flex lg:grid-cols-2 flex-col items-center mx-5 rounded-xl py-6 shadow-2xl px-5">
+            <div
+                class="content2-part-1 lg:grid flex lg:grid-cols-2 flex-col items-center mx-5 rounded-xl py-6 shadow-2xl px-5 animate1 toUp">
                 <!-- left -->
                 <div>
                     <img src="src/img/6 (3).png" alt="img" class="w-50  -mt-40 m-auto" style="max-width:300px">
@@ -135,7 +141,8 @@
                 </div>
             </div>
             <!-- content2-part -->
-            <div class="lg:grid flex lg:grid-cols-2 flex-col-reverse items-center mx-5 rounded-xl py-6 shadow-2xl px-5">
+            <div
+                class="content2-part-2 lg:grid flex lg:grid-cols-2 flex-col-reverse items-center mx-5 rounded-xl py-6 shadow-2xl px-5 animate1 toUp">
                 <!-- left -->
                 <div>
                     <p class="text-xl md:text-start text-center">Dalam kimia, alkohol (atau alkanol) adalah istilah
@@ -150,7 +157,8 @@
                 </div>
             </div>
             <!-- content2-part -->
-            <div class="lg:grid flex lg:grid-cols-2 flex-col items-center mx-5 rounded-xl py-6 shadow-2xl px-5">
+            <div
+                class="content2-part-3 lg:grid flex lg:grid-cols-2 flex-col items-center mx-5 rounded-xl py-6 shadow-2xl px-5 animate1 toUp">
                 <!-- left -->
                 <div>
                     <img src="src/img/6 (2).png" alt="img" class="w-50  -mt-40 m-auto" style="max-width:300px">
@@ -169,16 +177,16 @@
     </div>
 
     <!-- content3 -->
-    <div class="py-10 lg:px-0 px-10 min-h-screen flex flex-col justify-center gap-10">
+    <div class="content3 py-10 lg:px-0 px-10 min-h-screen flex flex-col justify-center gap-10">
         <div class="text-center" id="prosedur">
-            <h2 class="text-5xl text-pink-700 font-bold">Prosedur</h2>
-            <p class="text-xl mb-3">Cara penggunaan tepat dan benar</p>
-            <div class="bg-pink-100 h-0.5 m-auto"></div>
+            <h2 class="text-5xl text-pink-700 font-bold animate1 toUp">Prosedur</h2>
+            <p class="text-xl mb-3 animate1 toUp">Cara penggunaan tepat dan benar</p>
+            <div class="bg-pink-100 h-0.5 m-auto border1 animate1 toRight"></div>
         </div>
         <div class="flex justify-center">
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 py-5 max-w-6xl">
                 <!-- card -->
-                <div class="max-w-xl">
+                <div class="max-w-xl card animate1 toUp">
                     <img src="src/img/5.png" alt="img" class="w-full max-w-xs m-auto">
                     <p class="text-center pt-5">Oleskan produk ke satu telapak tangan (baca label untuk mengetahui
                         jumlah
@@ -186,18 +194,18 @@
                         benar) </p>
                 </div>
                 <!-- card -->
-                <div class="max-w-xl">
+                <div class="max-w-xl card animate1 toUp">
                     <img src="src/img/3.png" alt="img" class="w-full max-w-xs m-auto">
                     <p class="text-center pt-5">Gosokkan produk ke seluruh permukaan tangan sampai tangan kering. </p>
                 </div>
                 <!-- card -->
-                <div class="max-w-xl">
+                <div class="max-w-xl card animate1 toUp">
                     <img src="src/img/4.png" alt="img" class="w-full max-w-xs m-auto">
                     <p class="text-center pt-5">Menutupi semua permukaan kedua tangan dengan hand sanitizer telah
                         terbukti sama efektifnya dengan menggosok-gosokkan hand sanitizer pada kedua telapak tangan.</p>
                 </div>
                 <!-- card -->
-                <div class="max-w-xl">
+                <div class="max-w-xl card animate1 toUp">
                     <img src="src/img/5a36966ce20ac0.4113131115135268929259.png" alt="img"
                         class="w-full max-w-xs m-auto">
                     <p class="text-center pt-5">Peringatan : Menelan hand sanitizer berbasis alkohol dapat menyebabkan
@@ -209,17 +217,17 @@
     </div>
 
     <!-- buy -->
-    <div class="bg-pink-200 flex justify-center py-10">
+    <div class="buy bg-pink-200 flex justify-center py-10">
         <div class="max-w-6xl px-10">
             <!-- text -->
             <div class="text-center pb-7" id="belanja">
-                <h2 class="text-4xl text-pink-700 font-bold">Tertarik? Pilih, lalu Klik aja</h2>
-                <p>Tersedia dalam berbagai online shop di dunia</p>
+                <h2 class="text-4xl text-pink-700 font-bold animate1 toUp">Tertarik? Pilih, lalu Klik aja</h2>
+                <p class="animate1 toUp">Tersedia dalam berbagai online shop di dunia</p>
             </div>
             <!-- main -->
             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 px-10">
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=hand%20sanitizer&search_source=omnisearch_category&source=navbar"
                         target="_blank">
                         <img src="src/img/bukalapak-icon-secondary.jpg" alt="img" class="max-h-40">
@@ -227,15 +235,15 @@
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://shopee.co.id/search?keyword=hand%20sanitizer&trackingId=searchhint-1637763165-987cf453-4d30-11ec-b925-4ea3d161ff9c"
                         target="_blank">
-                        <img src="src/img/5ed8daeb95898.jpeg" alt="img" class="max-h-40">
+                        <img src="src/img/5ed8daeb95898.jpg" alt="img" class="max-h-40">
                         Shopee
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.tokopedia.com/search?st=product&q=hand%20sanitizer&navsource=home"
                         target="_blank">
                         <img src="src/img/1575050504675-logo-tokopedia.jpg" alt="img" class="max-h-40">
@@ -243,7 +251,7 @@
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.lazada.co.id/catalog/?q=hand+sanitizer&_keyori=ss&from=input&spm=a2o4j.searchlist.search.go.276856f7y0miJJ"
                         target="_blank">
                         <img src="src/img/images.jpg" alt="img" class="max-h-40">
@@ -251,14 +259,14 @@
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class=" card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.olx.co.id/items/q-hand-sanitizer" target="_blank">
                         <img src="src/img/download.jpg" alt="img" class="max-h-40">
                         OLX
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.amazon.com/s?k=hand+sanitizer&crid=38NVHH4LL673B&sprefix=hand+sani%2Caps%2C280&ref=nb_sb_ss_ts-doa-p_1_8"
                         target="_blank">
                         <img src="src/img/Amazon.jpg" alt="img" class="max-h-40">
@@ -266,7 +274,7 @@
                     </a>
                 </div>
                 <!-- part -->
-                <div class="flex justify-center text-center transition transform hover:scale-110 ">
+                <div class="card animate1 toUp flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.alibaba.com//trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=hand+sanitizer"
                         target="_blank">
                         <img src="src/img/download (1).jpg" alt="img" class="max-h-40">
@@ -282,11 +290,11 @@
         <h6>Ada pertanyaan? Jangan segan-segan hubungi saya ^^</h6>
         <ul class="flex flex-col gap-2 py-2">
             <li class="flex items-center gap-2"><img class="w-10" src="src/img/ig.jpg" alt="instagram"><a
-                    href="https://www.instagram.com/adisan_103/" class="text-blue-600">adisan_103</a>
+                    href="https://www.instagram.com/adisan_103/" class="text-blue-600" target="_blank">adisan_103</a>
             </li>
             <li class="flex items-center gap-2"><img class="w-10" src="src/img/asd.jpg" alt="website"><a
-                    href="https://adisan103.github.io/disanjaya/"
-                    class="text-blue-600">adisan103.github.io/disanjaya/</a>
+                    href="https://adisan103.github.io/disanjaya/" class="text-blue-600"
+                    target="_blank">adisan103.github.io/disanjaya/</a>
             </li>
         </ul>
         <p class="text-center pt-7">copyright by disanjaya 2021</p>
