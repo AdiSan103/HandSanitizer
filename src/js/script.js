@@ -17,10 +17,10 @@ function removeClass(theSelector, theClass) {
 queryClass('.hamburger-menu1').addEventListener('click', function() {
     if(window.innerWidth < 992) {
         //cek class d-none
-        if( queryClass('.nav').classList.contains('false-md') == true ) {
-            removeClass('.nav','false-md')
+        if( queryClass('.nav').classList.contains('-translate-x-full') == true ) {
+            removeClass('.nav','-translate-x-full')
         }  else {
-            addClass('.nav','false-md')
+            addClass('.nav','-translate-x-full')
         }
     }
 })
@@ -28,17 +28,10 @@ queryClass('.hamburger-menu1').addEventListener('click', function() {
 queryClass('.hamburger-menu2').addEventListener('click', function() {
     if(window.innerWidth < 992) {
         //cek class d-none
-        if( queryClass('.nav').classList.contains('false-md') == true ) {
-            removeClass('.nav','false-md')
+        if( queryClass('.nav').classList.contains('-translate-x-full') == true ) {
+            removeClass('.nav','-translate-x-full')
         }  else {
-            addClass('.nav','false-md')
+            addClass('.nav','-translate-x-full')
         }
     }
 })
-
-// --------------dataTables--------------
-$(document).ready(function() {
-    $('#example').DataTable({
-        "scrollX": true,
-    }); 
-} );

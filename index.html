@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Sanitizer</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
     <!-- tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- google font -->
@@ -25,29 +29,42 @@
 
 <body>
     <!-- nav -->
-    <div class="grid grid-cols-2 shadow-2xl">
+    <div class="lg:fixed grid grid-cols-2 shadow-2xl w-full">
         <div
             class="py-4 px-4 flex justify-evenly bg-white lg:relative fixed  z-30 items-center w-full lg:shadow-none shadow-2xl">
             <!-- left -->
             <div>
                 <h2 class="font-bold">HAND SANITZER</h2>
+                <!-- hamburger -->
+                <div class="lg:hidden block hamburger-menu2 absolute cursor-pointer top-2.5 left-5">
+                    <div class="w-9 bg-pink-600 h-1.5 inset-0 rounded-xl my-1"></div>
+                    <div class="w-9 bg-pink-600 h-1.5 inset-0 rounded-xl my-1"></div>
+                    <div class="w-9 bg-pink-600 h-1.5 inset-0 rounded-xl my-1"></div>
+                </div>
             </div>
         </div>
         <!-- right -->
         <div
-            class="flex items-center justify-evenly gap-2 lg:flex-row flex-col lg:h-14 h-screen z-50 bg-white lg:relative fixed lg:w-auto w-3/6 ">
+            class="nav flex items-center justify-evenly gap-2 lg:flex-row flex-col lg:h-14 h-screen z-50 bg-white lg:relative fixed lg:w-auto w-3/6 transform transition lg:translate-x-0">
+            <!-- hamburger -->
+            <div class="lg:hidden block hamburger-menu1 absolute cursor-pointer top-5 left-5">
+                <div class="transform rotate-45 translate-y-2.5 w-9 bg-pink-600 h-1.5 inset-0 rounded-xl my-1"></div>
+                <div class="transform -rotate-45 w-9 bg-pink-600 h-1.5 inset-0 rounded-xl my-1"></div>
+            </div>
             <div>
                 <a href="/index.html#komposisi"
-                    class="transition hover:text-white hover:bg-black py-2 px-4">Komposisi</a>
+                    class="transition hover:text-white hover:bg-pink-600 py-2 px-4">Komposisi</a>
             </div>
             <div>
-                <a href="/index.html#prosedur" class="transition hover:text-white hover:bg-black py-2 px-4">Prosedur</a>
+                <a href="/index.html#prosedur"
+                    class="transition hover:text-white hover:bg-pink-600 py-2 px-4">Prosedur</a>
             </div>
             <div>
-                <a href="/index.html#belanja" class="transition hover:text-white hover:bg-black py-2 px-4">Belanja</a>
+                <a href="/index.html#belanja"
+                    class="transition hover:text-white hover:bg-pink-600 py-2 px-4">Belanja</a>
             </div>
             <div>
-                <a href="/index.html#contact" class="transition hover:text-white hover:bg-black py-2 px-4">Hubungi
+                <a href="/index.html#contact" class="transition hover:text-white hover:bg-pink-600 py-2 px-4">Hubungi
                     Saya</a>
             </div>
         </div>
@@ -57,7 +74,7 @@
     <div class="md:grid flex md:grid-cols-2 flex-col-reverse items-center justify-center gap-3 px-4 min-h-screen">
         <!-- left -->
         <div class="flex flex-col items-center">
-            <h1 class="text-5xl">Hand Sanitizer</h1>
+            <h1 class="text-5xl text-pink-700 font-bold">Hand Sanitizer</h1>
             <h6 class="pb-12 text-center text-xl">Pilihan terbaik ketika tidak ada fasilitas cuci tangan.</h6>
             <div>
                 <a href="/index.html#next"
@@ -80,7 +97,7 @@
         </ul>
         <!-- center -->
         <div>
-            <img src="src/img/6 (1).png" alt="img" class="w-full max-w-md m-auto">
+            <img src="src/img/6 (1).png" alt="img" class="w-full max-w-md m-auto p-7">
         </div>
         <!-- right -->
         <ul class="grid content-center text-2xl lg:text-left text-center">
@@ -92,9 +109,9 @@
     <div class="max-w-5xl flex m-auto flex-col">
         <!-- content2-title -->
         <div class="pt-16 pb-28 px-5" id="komposisi">
-            <h2 class="text-7xl">Komposisi</h2>
+            <h2 class="text-5xl text-pink-700 font-bold">KOMPOSISI</h2>
             <p class="text-xl">HAND SANITIZER mengandung Alkohol</p>
-            <div class="bg-black h-0.5 mt-3 w-96"></div>
+            <div class="bg-pink-100 h-0.5 mt-3 w-96"></div>
         </div>
 
         <div class="gap-44 flex my-10 flex-col">
@@ -154,15 +171,16 @@
     <!-- content3 -->
     <div class="py-10 lg:px-0 px-10 min-h-screen flex flex-col justify-center gap-10">
         <div class="text-center" id="prosedur">
-            <h2 class="text-7xl">Prosedur</h2>
-            <p class="text-xl">Cara penggunaan tepat dan benar</p>
+            <h2 class="text-5xl text-pink-700 font-bold">Prosedur</h2>
+            <p class="text-xl mb-3">Cara penggunaan tepat dan benar</p>
+            <div class="bg-pink-100 h-0.5 m-auto w-96"></div>
         </div>
         <div class="flex justify-center">
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 py-5 max-w-6xl">
                 <!-- card -->
                 <div class="max-w-xl">
                     <img src="src/img/5.png" alt="img" class="w-full max-w-xs m-auto">
-                    <p class="text-center pt-5">oleskan produk ke satu telapak tangan (baca label untuk mengetahui
+                    <p class="text-center pt-5">Oleskan produk ke satu telapak tangan (baca label untuk mengetahui
                         jumlah
                         yang
                         benar) </p>
@@ -170,18 +188,21 @@
                 <!-- card -->
                 <div class="max-w-xl">
                     <img src="src/img/3.png" alt="img" class="w-full max-w-xs m-auto">
-                    <p class="text-center pt-5">oleskan produk ke satu telapak tangan (baca label untuk mengetahui
-                        jumlah
-                        yang
-                        benar) </p>
+                    <p class="text-center pt-5">Gosokkan produk ke seluruh permukaan tangan sampai tangan kering. </p>
                 </div>
                 <!-- card -->
                 <div class="max-w-xl">
                     <img src="src/img/4.png" alt="img" class="w-full max-w-xs m-auto">
-                    <p class="text-center pt-5">oleskan produk ke satu telapak tangan (baca label untuk mengetahui
-                        jumlah
-                        yang
-                        benar) </p>
+                    <p class="text-center pt-5">Menutupi semua permukaan kedua tangan dengan hand sanitizer telah
+                        terbukti sama efektifnya dengan menggosok-gosokkan hand sanitizer pada kedua telapak tangan.</p>
+                </div>
+                <!-- card -->
+                <div class="max-w-xl">
+                    <img src="src/img/5a36966ce20ac0.4113131115135268929259.png" alt="img"
+                        class="w-full max-w-xs m-auto">
+                    <p class="text-center pt-5">Peringatan : Menelan hand sanitizer berbasis alkohol dapat menyebabkan
+                        keracunan dan Hand sanitizer harus disimpan jauh dari jangkauan anak-anak dan harus digunakan
+                        dengan pengawasan orang dewasa. </p>
                 </div>
             </div>
         </div>
@@ -189,10 +210,10 @@
 
     <!-- buy -->
     <div class="bg-pink-200 flex justify-center py-10">
-        <div class="max-w-xl px-10">
+        <div class="max-w-6xl px-10">
             <!-- text -->
             <div class="text-center pb-7" id="belanja">
-                <h2 class="text-4xl">Tertarik? Pilih, lalu Klik aja</h2>
+                <h2 class="text-4xl text-pink-700 font-bold">Tertarik? Pilih, lalu Klik aja</h2>
                 <p>Tersedia dalam berbagai online shop di dunia</p>
             </div>
             <!-- main -->
@@ -201,7 +222,7 @@
                 <div class="flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=hand%20sanitizer&search_source=omnisearch_category&source=navbar"
                         target="_blank">
-                        <img src="src/img/bukalapak-icon-secondary.png" alt="img" class="max-h-40">
+                        <img src="src/img/bukalapak-icon-secondary.jpg" alt="img" class="max-h-40">
                         Bukalapak
                     </a>
                 </div>
@@ -225,14 +246,14 @@
                 <div class="flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.lazada.co.id/catalog/?q=hand+sanitizer&_keyori=ss&from=input&spm=a2o4j.searchlist.search.go.276856f7y0miJJ"
                         target="_blank">
-                        <img src="src/img/images.png" alt="img" class="max-h-40">
+                        <img src="src/img/images.jpg" alt="img" class="max-h-40">
                         Lazada
                     </a>
                 </div>
                 <!-- part -->
                 <div class="flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.olx.co.id/items/q-hand-sanitizer" target="_blank">
-                        <img src="src/img/download.png" alt="img" class="max-h-40">
+                        <img src="src/img/download.jpg" alt="img" class="max-h-40">
                         OLX
                     </a>
                 </div>
@@ -240,7 +261,7 @@
                 <div class="flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.amazon.com/s?k=hand+sanitizer&crid=38NVHH4LL673B&sprefix=hand+sani%2Caps%2C280&ref=nb_sb_ss_ts-doa-p_1_8"
                         target="_blank">
-                        <img src="src/img/Amazon.png" alt="img" class="max-h-40">
+                        <img src="src/img/Amazon.jpg" alt="img" class="max-h-40">
                         Amazon
                     </a>
                 </div>
@@ -248,7 +269,7 @@
                 <div class="flex justify-center text-center transition transform hover:scale-110 ">
                     <a href="https://www.alibaba.com//trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=hand+sanitizer"
                         target="_blank">
-                        <img src="src/img/download (1).png" alt="img" class="max-h-40">
+                        <img src="src/img/download (1).jpg" alt="img" class="max-h-40">
                         Alibaba
                     </a>
                 </div>
@@ -260,10 +281,10 @@
     <footer class="px-5 py-8" id="contact">
         <h6>Ada pertanyaan? Jangan segan-segan hubungi saya ^^</h6>
         <ul class="flex flex-col gap-2 py-2">
-            <li class="flex items-center gap-2"><img class="w-10" src="src/img/ig.png" alt="instagram"><a
+            <li class="flex items-center gap-2"><img class="w-10" src="src/img/ig.jpg" alt="instagram"><a
                     href="https://www.instagram.com/adisan_103/" class="text-blue-600">adisan_103</a>
             </li>
-            <li class="flex items-center gap-2"><img class="w-10" src="src/img/asd.png" alt="website"><a
+            <li class="flex items-center gap-2"><img class="w-10" src="src/img/asd.jpg" alt="website"><a
                     href="https://adisan103.github.io/disanjaya/"
                     class="text-blue-600">adisan103.github.io/disanjaya/</a>
             </li>
